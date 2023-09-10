@@ -6,10 +6,18 @@
 
 :root {
     --primary: #ffefd5;
+    --secondary: rgb(85,85,85);
 
+    --hover: rgb(128, 128, 128);
+    --text-decoration: rgb(181,181,181);
+    --border: rgb(53,53,53);
 
-    --white: #ffffff;
+    --white: #fff;
+    --black: #000;
+
   }
+
+
 /* Reset some default styles */
 * {
     margin: 0;
@@ -27,7 +35,7 @@ html {
 }
 
 p {
-    color: rgb(85,85,85)
+    color: var(--secondary);
 }
 
 /* Transition */
@@ -55,16 +63,16 @@ nav {
 }
 
 a {
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     text-decoration-color: var(--white);
 }
 
 a:hover {
-    color: rgb(128, 128, 128);
+    color: var(--hover);
     text-decoration: underline;
     text-underline-offset: 0.7rem;
-    text-decoration-color: rgb(181,181,181);
+    text-decoration-color: var(--text-decoration);
 }
 
 .logo {
@@ -100,7 +108,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: var(--black);
     transition: all 0.3 ease-in-out;
 }
 
@@ -127,7 +135,7 @@ a:hover {
     padding: 0.8rem;
     text-align: center;
     font-size: 1.5rem;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     transition: all 0.3 ease-in-out
 }
@@ -165,7 +173,7 @@ section {
 }
 
 .section-container {
-    display: flexbox;
+    display: flex;
 }
 
 
@@ -249,13 +257,13 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(53,53,53);
+    background: var(--border);
     color: var(--white);
     border: rgb(255,255,255) 0.1rem solid
 }
 
 .btn-color-1:hover {
-    background: rgb(0,0,0);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -272,4 +280,58 @@ section {
 .icon {
     cursor: pointer;
     height: 3rem;
+}
+
+/* About section */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.about-containers, 
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background-color: var(--white);
+    border-radius: 2rem;
+    border: var(--border);
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
