@@ -350,7 +350,11 @@ section {
     color: var(--secondary);
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+}
+
+.experience-padding {
+    padding: 4rem 0;
 }
 
 .experience-details-container {
@@ -378,4 +382,32 @@ article {
 
 article .icon {
     cursor: pointer;
+}
+
+
+/* Projects section */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: var(--border-color);
+    background-color: rgb(250,250,250);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: var(--black);
+}
+
+.project-btn {
+    color: var(--black);
+    border-bottom: var(--border-color);
 }
