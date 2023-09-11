@@ -11,9 +11,12 @@
     --hover: rgb(128, 128, 128);
     --text-decoration: rgb(181,181,181);
     --border: rgb(53,53,53);
+    --border-color: rgb(163,163,163);
 
     --white: #fff;
     --black: #000;
+
+
 
   }
 
@@ -320,8 +323,8 @@ section {
     flex: 1;
     background-color: var(--white);
     border-radius: 2rem;
-    border: var(--border);
-    border-color: rgb(163,163,163);
+    border: 1px solid var(--border-color);
+
     text-align: center;
 }
 
@@ -334,4 +337,45 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+
+/* Experience */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: var(--secondary);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: pointer;
 }
