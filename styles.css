@@ -169,7 +169,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: 80vh;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -450,4 +450,15 @@ article .icon {
 
 .linkedin-icon {
     height: 2.5rem;
+}
+
+/* Footer */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
 }
